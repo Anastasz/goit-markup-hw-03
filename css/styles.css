@@ -100,7 +100,7 @@ overflow: hidden;
 }
 
 .second-section-li{
-	width: calc((100% - 72px) / 4); 
+	flex-basis: calc((100% - 3 * 24px) / 4); 
 }
 
 .h3-section{
@@ -186,8 +186,8 @@ gap: 24px;
 }
 
 .third-section-li{
-	flex-basis: calc((100% - 3 * 24px) / 4) 
-	border-radius: 0px 0px 4px 4px; 
+	flex-basis: calc((100% - 3 * 24px) / 4);
+	border-radius: 0px 0px 4px 4px;
 }
 
 
