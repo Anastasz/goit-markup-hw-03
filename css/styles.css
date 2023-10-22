@@ -14,12 +14,37 @@ ol {
 	list-style-type: none;
 }
 
+img {
+	display: block;
+}
+
+header{
+	border-bottom: 1px solid #e7e9fc;
+}
+
+.div-container{
+	display:flex;
+}
+
+.container{
+	width:1158px;
+	margin:0 auto;
+	padding:0 15px;
+}
 a {
 	text-decoration: none;
 }
 
 button {
 	cursor: pointer;
+}
+
+.first-section {
+	padding: 188px 0;
+}
+.main-nav{
+	display:flex;
+	align-items: center;
 }
 
 .main-title {
@@ -29,6 +54,7 @@ button {
 	line-height: 1.07;
 	background-color: #2e2f42;
 	text-align: center;
+	max-width: 496px;
 }
 
 .main-button {
@@ -37,12 +63,39 @@ button {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
-	;
+	display: block;
+	min-width: 169px;
+	height: 56px;
+	border: none;
+	background-color: var(#4d5aE5);
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 .main-button:hover,
 .main-button:focus {
 	background-color: #404bbf;
+}
+
+.second-section {
+ padding: 120px 0;
+}
+
+.visually-hidden{
+	display: none;
+}
+
+.second-section-ul{
+	display: flex;
+	gap: 24px;
+}
+
+.second-section-li{
+	flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.h3-section{
+	margin-bottom: 8px;
 }
 
 .nav-link:hover,
@@ -63,6 +116,7 @@ button {
 	line-height: 1.16;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-right: 76px;
 }
 
 .logo-span {
@@ -82,6 +136,7 @@ button {
 	font-weight: 500;
 	line-height: 24px;
 	color: #2e2f42;
+	padding: 24px 0;
 }
 
 .address:hover,
@@ -95,6 +150,8 @@ button {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
+	display: flex;
+	gap: 40px;
 }
 
 .section-title {
@@ -105,13 +162,27 @@ button {
 	font-weight: 700;
 	line-height: 1.11;
 	text-transform: capitalize;
+	margin-bottom: 72px;
 }
 
-.person-title {
+.third-section {
 	font-size: 20px;
 	font-weight: 400;
 }
 
+.third-section-ul{
+display: flex;
+gap: 24px;
+}
+
+.third-section-li{
+	flex-basis: calc((100% - 3 * 24px) / 4) 
+	border-radius: 0px 0px 4px 4px; 
+}
+
+.div-3section{
+	padding: 32px 0;
+}
 .product-title {
 	font-family: Roboto;
 	font-size: 20px;
@@ -120,15 +191,60 @@ button {
 	line-height: 1.2;
 }
 
+
+.peson-title{
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.person.desc{
+	text-align: center;
+}
+
 .menu {
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 1.25;
 	letter-spacing: 0.04em;
+	display: flex;
+	gap: 40px;
+}
+
+.third-section {
+	background-color: #f4f4fd;
+}
+
+.fourth-section{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+
+.fourth-section-ul{
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+}
+
+.fourth-section-li{
+	width: calc((100% - 48px) / 3); 
+}
+
+.div-4section {
+padding: 32px 16px;
+border: 1px solid #e7e9fc; 
+border-top: none;
+}
+
+
+.product-title4{
+	margin-bottom: 8px;
 }
 
 .main-footer {
 	background-color: #2e2f42;
+	padding: 100px 0;
 }
 
 .footer-link {
@@ -140,12 +256,11 @@ button {
 	line-height: 1.16;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .footer-desc {
 	color: #f4f4fd;
-}
-
-.section-person {
-	background-color: #f4f4fd;
+	max-width: 264px;
 }
