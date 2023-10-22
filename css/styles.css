@@ -82,7 +82,16 @@ button {
 }
 
 .visually-hidden{
-	display: none;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .second-section-ul{
@@ -91,7 +100,7 @@ button {
 }
 
 .second-section-li{
-	flex-basis: calc((100% - 3 * 24px) / 4);
+	width: calc((100% - 72px) / 4); 
 }
 
 .h3-section{
@@ -168,6 +177,7 @@ button {
 .third-section {
 	font-size: 20px;
 	font-weight: 400;
+	padding: 120px 0;
 }
 
 .third-section-ul{
@@ -180,9 +190,11 @@ gap: 24px;
 	border-radius: 0px 0px 4px 4px; 
 }
 
+
 .div-3section{
 	padding: 32px 0;
 }
+
 .product-title {
 	font-family: Roboto;
 	font-size: 20px;
