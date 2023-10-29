@@ -12,6 +12,8 @@ body {
 ul,
 ol {
 	list-style-type: none;
+	padding:0;
+	margin:0;
 }
 
 img {
@@ -24,6 +26,7 @@ header{
 
 .div-container{
 	display:flex;
+	align-items: center;
 }
 
 .container{
@@ -41,6 +44,7 @@ button {
 
 .first-section {
 	padding: 188px 0;
+	background-color: #2e2f42;
 }
 .main-nav{
 	display:flex;
@@ -52,9 +56,12 @@ button {
 	font-size: 56px;
 	font-weight: bold;
 	line-height: 1.07;
-	background-color: #2e2f42;
 	text-align: center;
 	max-width: 496px;
+	margin: 0;
+	margin-left:auto ;
+	margin-right: auto;
+	margin-bottom: 48px;
 }
 
 .main-button {
@@ -70,6 +77,7 @@ button {
 	background-color: var(#4d5aE5);
 	border-radius: 4px;
 	cursor: pointer;
+	margin: 0;
 }
 
 .main-button:hover,
@@ -101,7 +109,10 @@ overflow: hidden;
 
 .second-section-li{
 	width: 264px;
-}
+} 
+
+
+/*flex-basis: calc((100% - 72px) / 4);*/
 
 .h-section{
 	margin-bottom: 8px;
@@ -146,6 +157,7 @@ overflow: hidden;
 	line-height: 24px;
 	color: #2e2f42;
 	padding: 24px 0;
+	display:block;
 }
 
 .address:hover,
@@ -162,6 +174,11 @@ overflow: hidden;
 	display: flex;
 	gap: 40px;
 }
+
+element.style{
+	margin-left: auto;
+}
+
 
 .section-title {
 	text-align: center;
